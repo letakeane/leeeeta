@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import logo from './logo.svg';
 import Footer from './Footer';
 import './App.css';
 
