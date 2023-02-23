@@ -60,10 +60,16 @@ a:not(.btn--remix):visited,
   border-style: none;
 }
 
+.active,
 .footer a:hover,
 .item a:hover,
 .meat a:hover {
   background: var(--color-primary);
+}
+
+.pending {
+  background: var(--color-primary);
+  filter: saturate(25%);
 }
 
 .footer .links {
