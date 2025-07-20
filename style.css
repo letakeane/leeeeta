@@ -1,0 +1,188 @@
+:root {
+  --color-bg: #ffb800;
+  --color-text-main: #000000;
+  --color-primary: #cb6ce6;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Roboto Mono";
+  --font-family-header: "Roboto Mono";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap")
+    format("opentype");
+}
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap")
+    format("opentype");
+}
+
+html {
+  background-color: #ffb800;
+}
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited,
+.item a,
+.meat a {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover,
+.item a:hover,
+.meat a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: Roboto Mono;
+  background-color: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-family: Roboto Mono;
+  font-style: normal;
+  /*   font-weight: bold; */
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+  text-align: right;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: #cb6ce6;
+  font-family: Roboto Mono;
+  font-weight: 300;
+}
+
+h3, h4 {
+  margin: 0;
+}
+
+h4 {
+  color: #cb6ce6;
+}
+
+.subheading {
+  text-align: right;
+}
+
+.meat {
+  max-width: 500px;
+}
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+  width: 100%;
+}
+
+.item {
+  min-width: 200px;
+  border: 5px solid white;
+  padding: 5px 10px;
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.item h3 {
+  margin-bottom: 15px;
+}
+
+.item p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.item img {
+  margin-bottom: 10px;
+}
+
+.item .deets {
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 12px;
+}
+
+.contact-short {
+  max-width: 300px;
+  text-align: center;
+}
